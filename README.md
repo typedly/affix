@@ -23,15 +23,15 @@ A **TypeScript** type definitions package for affix.
 - [Installation](#installation)
 - [Api](#api)
   - [Interface](#interface)
-    - [`AffixConfiguration`]
-    - [`AffixOptions`]
+    - [`AffixConfiguration`](#affixconfiguration)
+    - [`AffixOptions`](#affixoptions)
   - [Type](#type)
-    - [`AffixKind`]
-    - [`AffixTemplate`]
-    - [`AffixTuple`]
-    - [`BasicAffixKind`]
-    - [`SuprasegmentalAffixKind`]
-    - [`HypotheticalAffixKind`]
+    - [`AffixKind`](#affixkind)
+    - [`AffixTemplate`](#affixtemplate)
+    - [`AffixTuple`](#affixtuple)
+    - [`BasicAffixKind`](#basicaffixkind)
+    - [`SuprasegmentalAffixKind`](#suprasegmentalaffixkind)
+    - [`HypotheticalAffixKind`](#hypotheticalaffixkind)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
