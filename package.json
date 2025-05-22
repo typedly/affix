@@ -1,6 +1,6 @@
 {
   "name": "@typedly/affix",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "A TypeScript type definitions package for affix.",
   "license": "MIT",
