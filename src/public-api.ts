@@ -7,8 +7,8 @@ export type {
 } from './interface';
 
 export type {
+  AdfixTemplate,
   AffixKind,
-  AffixTemplate,
   AffixTuple,
   BasicAffixKind,
   SuprasegmentalAffixKind,

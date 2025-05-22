@@ -106,7 +106,7 @@ import { AffixKind } from '@typedly/affix';
 [`adfix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/adfix-template.type.ts)
 
 ```typescript
-import { AffixTemplate } from '@typedly/affix';
+import { AdfixTemplate } from '@typedly/affix';
 ```
 
 #### `AffixTuple`
