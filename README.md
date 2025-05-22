@@ -54,8 +54,8 @@ import {
   AffixConfiguration,
   AffixOptions,
   //Type.
+  AdfixTemplate,
   AffixKind,
-  AffixTemplate,
   AffixTuple,
   BasicAffixKind,
   SuprasegmentalAffixKind,
@@ -67,7 +67,7 @@ import {
 
 #### `AffixConfiguration`
 
-- [`affix-configuration.interface.ts`](https://github.com/typedly/affix/blob/main/src/interface/affix-configuration.interface.ts)
+[`affix-configuration.interface.ts`](https://github.com/typedly/affix/blob/main/src/interface/affix-configuration.interface.ts)
 
 ```typescript
 import { AffixConfiguration } from '@typedly/affix';
@@ -101,9 +101,9 @@ const suffixOpts: AffixOptions<'item'> = {
 import { AffixKind } from '@typedly/affix';
 ```
 
-#### `AffixTemplate`
+#### `AdfixTemplate`
 
-[`affix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/affix-template.type.ts)
+[`adfix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/adfix-template.type.ts)
 
 ```typescript
 import { AffixTemplate } from '@typedly/affix';
