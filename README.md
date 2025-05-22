@@ -14,7 +14,7 @@
 [![GitHub issues][typedly-badge-issues]][typedly-issues]
 [![GitHub license][typedly-badge-license]][typedly-license]
 
-**Version:** v1.0.0
+**Version:** v2.0.0
 
 A **TypeScript** type definitions package for affix.
 
@@ -26,12 +26,12 @@ A **TypeScript** type definitions package for affix.
     - [`AffixConfiguration`](#affixconfiguration)
     - [`AffixOptions`](#affixoptions)
   - [Type](#type)
+    - [`AdfixTemplate`](#adfixtemplate)
+    - [`AdfixTuple`](#adfixtuple)
     - [`AffixKind`](#affixkind)
-    - [`AffixTemplate`](#affixtemplate)
-    - [`AffixTuple`](#affixtuple)
     - [`BasicAffixKind`](#basicaffixkind)
-    - [`SuprasegmentalAffixKind`](#suprasegmentalaffixkind)
     - [`HypotheticalAffixKind`](#hypotheticalaffixkind)
+    - [`SuprasegmentalAffixKind`](#suprasegmentalaffixkind)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -55,11 +55,11 @@ import {
   AffixOptions,
   //Type.
   AdfixTemplate,
+  AdfixTuple,
   AffixKind,
-  AffixTuple,
   BasicAffixKind,
-  SuprasegmentalAffixKind,
   HypotheticalAffixKind,
+  SuprasegmentalAffixKind,
 } from '@typedly/affix';
 ```
 
@@ -93,14 +93,6 @@ const suffixOpts: AffixOptions<'item'> = {
 
 ### Type
 
-#### `AffixKind`
-
-[`affix-kind.type.ts`](https://github.com/typedly/affix/blob/main/src/type/affix-kind.type.ts)
-
-```typescript
-import { AffixKind } from '@typedly/affix';
-```
-
 #### `AdfixTemplate`
 
 [`adfix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/adfix-template.type.ts)
@@ -109,12 +101,20 @@ import { AffixKind } from '@typedly/affix';
 import { AdfixTemplate } from '@typedly/affix';
 ```
 
-#### `AffixTuple`
+#### `AdfixTuple`
 
-[`affix-tuple.type.ts`](https://github.com/typedly/affix/blob/main/src/type/affix-tuple.type.ts)
+[`adfix-tuple.type.ts`](https://github.com/typedly/affix/blob/main/src/type/adfix-tuple.type.ts)
 
 ```typescript
-import { AffixTuple } from '@typedly/affix';
+import { AdfixTuple } from '@typedly/affix';
+```
+
+#### `AffixKind`
+
+[`affix-kind.type.ts`](https://github.com/typedly/affix/blob/main/src/type/affix-kind.type.ts)
+
+```typescript
+import { AffixKind } from '@typedly/affix';
 ```
 
 #### `BasicAffixKind`

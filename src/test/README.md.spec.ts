@@ -4,8 +4,8 @@ import {
 
 import {
   AffixKind,
-  AffixTemplate,
-  AffixTuple,
+  AdfixTemplate,
+  AdfixTuple,
   BasicAffixKind,
   HypotheticalAffixKind,
   SuprasegmentalAffixKind
@@ -20,9 +20,9 @@ const suffixOpts: AffixOptions<'item'> = {
 const kind: AffixKind = 'circumfix';
 
 // e.g., '--name-suffix'
-const fullName: AffixTemplate<'--', 'name', 'suffix', '-'> = '---name-suffix';
+const fullName: AdfixTemplate<'--', 'name', 'suffix', '-'> = '---name-suffix';
 
-const tuple: AffixTuple<'pre', 'suf'> = ['pre', 'suf'];
+const tuple: AdfixTuple<'pre', 'suf'> = ['pre', 'suf'];
 
 const basicKind: BasicAffixKind = 'prefix'; // or 'suffix' | 'infix' | 'circumfix'
 

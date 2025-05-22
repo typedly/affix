@@ -8,9 +8,9 @@ export type {
 
 export type {
   AdfixTemplate,
+  AdfixTuple,
   AffixKind,
-  AffixTuple,
   BasicAffixKind,
+  HypotheticalAffixKind,
   SuprasegmentalAffixKind,
-  HypotheticalAffixKind
 } from './type';
