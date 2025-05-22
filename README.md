@@ -14,7 +14,7 @@
 [![GitHub issues][typedly-badge-issues]][typedly-issues]
 [![GitHub license][typedly-badge-license]][typedly-license]
 
-**Version:** v2.0.0
+**Version:** v2.0.1
 
 A **TypeScript** type definitions package for affix.
 

@@ -7,8 +7,8 @@
  * @template {string} Delimiter The delimiter used to separate the prefix, stem, and suffix.
  */
 export type AdfixTemplate<
-  Prefix extends string,
-  Stem extends string,
-  Suffix extends string,
-  Delimiter extends string
+  Prefix extends string = string,
+  Stem extends string = string,
+  Suffix extends string = string,
+  Delimiter extends string = string
 > = `${Prefix}${Delimiter}${Stem}${Delimiter}${Suffix}`;
