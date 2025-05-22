@@ -61,14 +61,13 @@ import {
   SuprasegmentalAffixKind,
   HypotheticalAffixKind,
 } from '@typedly/affix';
-
 ```
 
 ### Interface
 
 #### `AffixConfiguration`
 
-- [`AffixConfiguration`](https://github.com/typedly/affix/blob/main/src/interface/affix-configuration.interface.ts)
+- [`affix-configuration.interface.ts`](https://github.com/typedly/affix/blob/main/src/interface/affix-configuration.interface.ts)
 
 ```typescript
 import { AffixConfiguration } from '@typedly/affix';
@@ -81,7 +80,7 @@ const prefixConfig: AffixConfiguration<'app'> = {
 
 #### `AffixOptions`
 
-📄 [Source – `affix-options.interface.ts`](https://github.com/typedly/affix/blob/main/src/interface/affix-options.interface.ts)
+[`affix-options.interface.ts`](https://github.com/typedly/affix/blob/main/src/interface/affix-options.interface.ts)
 
 ```typescript
 import { AffixOptions } from '@typedly/affix';
@@ -96,56 +95,50 @@ const suffixOpts: AffixOptions<'item'> = {
 
 #### `AffixKind`
 
-- [`AffixKind`](https://github.com/typedly/affix/blob/main/src/type/affix-kind.type.ts)
+[`affix-kind.type.ts`](https://github.com/typedly/affix/blob/main/src/type/affix-kind.type.ts)
 
 ```typescript
 import { AffixKind } from '@typedly/affix';
-
 ```
 
 #### `AffixTemplate`
 
-- [`AffixTemplate`](https://github.com/typedly/affix/blob/main/src/type/affix-template.type.ts)
+[`affix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/affix-template.type.ts)
 
 ```typescript
 import { AffixTemplate } from '@typedly/affix';
-
 ```
 
 #### `AffixTuple`
 
-- [`AffixTuple`](https://github.com/typedly/affix/blob/main/src/type/affix-tuple.type.ts)
+[`affix-tuple.type.ts`](https://github.com/typedly/affix/blob/main/src/type/affix-tuple.type.ts)
 
 ```typescript
 import { AffixTuple } from '@typedly/affix';
-
 ```
 
 #### `BasicAffixKind`
 
-- [`BasicAffixKind`](https://github.com/typedly/affix/blob/main/src/type/basic-affix-kind.type.ts)
+[`basic-affix-kind.type.ts`](https://github.com/typedly/affix/blob/main/src/type/basic-affix-kind.type.ts)
 
 ```typescript
 import { BasicAffixKind } from '@typedly/affix';
-
 ```
 
 #### `SuprasegmentalAffixKind`
 
-- [`SuprasegmentalAffixKind`](https://github.com/typedly/affix/blob/main/src/type/suprasegmental-affix-kind.type.ts)
+[`suprasegmental-affix-kind.type.ts`](https://github.com/typedly/affix/blob/main/src/type/suprasegmental-affix-kind.type.ts)
 
 ```typescript
 import { SuprasegmentalAffixKind } from '@typedly/affix';
-
 ```
 
 #### `HypotheticalAffixKind`
 
-- [`HypotheticalAffixKind`](https://github.com/typedly/affix/blob/main/src/type/hypothetical-affix-kind.type.ts)
+[`hypothetical-affix-kind.type.ts`](https://github.com/typedly/affix/blob/main/src/type/hypothetical-affix-kind.type.ts)
 
 ```typescript
 import { HypotheticalAffixKind } from '@typedly/affix';
-
 ```
 
 ## Contributing
