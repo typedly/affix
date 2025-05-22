@@ -81,7 +81,7 @@ const prefixConfig: AffixConfiguration<'app'> = {
 
 #### `AffixOptions`
 
-- [`AffixOptions`](https://github.com/typedly/affix/blob/main/src/interface/affix-options.interface.ts)
+📄 [Source – `affix-options.interface.ts`](https://github.com/typedly/affix/blob/main/src/interface/affix-options.interface.ts)
 
 ```typescript
 import { AffixOptions } from '@typedly/affix';
