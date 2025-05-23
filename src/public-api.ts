@@ -7,6 +7,7 @@ export type {
 } from './interface';
 
 export type {
+  Adfix,
   AdfixTemplate,
   AdfixTuple,
   AffixKind,
