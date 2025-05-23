@@ -1,3 +1,4 @@
+export type { Adfix } from './adfix.type';
 export type { AdfixTemplate } from './adfix-template.type';
 export type { AdfixTuple } from './adfix-tuple.type';
 export type { AffixKind } from './affix-kind.type';
