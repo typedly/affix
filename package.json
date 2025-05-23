@@ -23,7 +23,11 @@
   },
   "keywords": [
     "@typedly",
-    "@typedly/affix"
+    "@typedly/affix",
+    "adfix",
+    "affix",
+    "prefix",
+    "suffix"
   ],
   "funding": [
     {
