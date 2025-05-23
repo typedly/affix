@@ -14,7 +14,7 @@
 [![GitHub issues][typedly-badge-issues]][typedly-issues]
 [![GitHub license][typedly-badge-license]][typedly-license]
 
-**Version:** v2.0.1
+**Version:** v2.1.0
 
 A **TypeScript** type definitions package for affix.
 
@@ -26,6 +26,7 @@ A **TypeScript** type definitions package for affix.
     - [`AffixConfiguration`](#affixconfiguration)
     - [`AffixOptions`](#affixoptions)
   - [Type](#type)
+    - [`Adfix`](#adfix)
     - [`AdfixTemplate`](#adfixtemplate)
     - [`AdfixTuple`](#adfixtuple)
     - [`AffixKind`](#affixkind)
@@ -54,6 +55,7 @@ import {
   AffixConfiguration,
   AffixOptions,
   //Type.
+  Adfix,
   AdfixTemplate,
   AdfixTuple,
   AffixKind,
@@ -92,6 +94,14 @@ const suffixOpts: AffixOptions<'item'> = {
 ```
 
 ### Type
+
+#### `Adfix`
+
+[`adfix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/adfix.type.ts)
+
+```typescript
+import { Adfix } from '@typedly/affix';
+```
 
 #### `AdfixTemplate`
 
