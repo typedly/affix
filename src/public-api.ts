@@ -3,6 +3,7 @@
  */
 export type {
   AffixConfiguration,
+  AffixConstructor,
   AffixOptions
 } from './interface';
 
