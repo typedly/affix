@@ -165,8 +165,8 @@ const settings1: AffixSettings<'example', 7, 27, 10, RegExp> = {
   value: 'example',
   length: {
     value: 7,
-    min: 27,
-    max: 10 
+    min: 10,
+    max: 27 
   },
   pattern: {
     regexp: /^[a-zA-Z]+$/,
