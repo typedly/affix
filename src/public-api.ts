@@ -4,7 +4,8 @@
 export type {
   AffixConfiguration,
   AffixConstructor,
-  AffixOptions
+  AffixOptions,
+  AffixSettings
 } from './interface';
 
 export type {
