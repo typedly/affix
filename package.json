@@ -1,6 +1,6 @@
 {
   "name": "@typedly/affix",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "A TypeScript type definitions package for affix.",
   "license": "MIT",
@@ -8,7 +8,9 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "devDependencies": {},
+  "dependencies": {
+    "@typedly/settings": "^0.1.0"
+  },
   "scripts": {
     "prepublishOnly": "npm install rimraf && npm run pkg && npm run clean",
     "pkg": "npm pkg delete module fesm2022 dependencies",
