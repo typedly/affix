@@ -45,6 +45,14 @@ A **TypeScript** type definitions package for affix.
 
 ## Installation
 
+### Install peer dependencies
+
+```bash
+npm install @typedly/settings --save-peer
+```
+
+### Install the package
+
 ```bash
 npm install @typedly/affix --save-peer
 ```
