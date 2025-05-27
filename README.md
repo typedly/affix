@@ -14,7 +14,7 @@
 [![GitHub issues][typedly-badge-issues]][typedly-issues]
 [![GitHub license][typedly-badge-license]][typedly-license]
 
-**Version:** v2.1.0
+**Version:** v2.3.0
 
 A **TypeScript** type definitions package for affix.
 
@@ -26,6 +26,7 @@ A **TypeScript** type definitions package for affix.
     - [`AffixConfiguration`](#affixconfiguration)
     - [`AffixConstructor`](#affixconstructor)
     - [`AffixOptions`](#affixoptions)
+    - [`AffixSettings`](#affixsettings)
   - [Type](#type)
     - [`Adfix`](#adfix)
     - [`AdfixTemplate`](#adfixtemplate)
@@ -56,6 +57,7 @@ import {
   AffixConfiguration,
   AffixConstructor,
   AffixOptions,
+  AffixSettings,
   //Type.
   Adfix,
   AdfixTemplate,
@@ -79,6 +81,31 @@ import { AffixConfiguration } from '@typedly/affix';
 const prefixConfig: AffixConfiguration<'app'> = {
   value: 'app',
   pattern: /[^a-z]/g // Removes non-lowercase letters
+};
+
+// Length and pattern exact value.
+const affixConfiguration1: AffixConfiguration<'example', 7> = {
+  value: 'example',
+  length: 7,
+  pattern: /^[a-zA-Z]+$/,
+  timestamp: new Date(),
+};
+
+// Full configuration with length and pattern settings.
+const affixConfiguration2: AffixConfiguration<'example', 7, 27, 34> = {
+  value: 'example',
+  length: {
+    value: 7,
+    min: 27,
+    max: 34 
+  },
+  pattern: {
+    regexp: /^[a-zA-Z]+$/,
+    lowercase: true,
+    uppercase: true,
+    special: true,
+  },
+  timestamp: new Date(),
 };
 ```
 
@@ -124,6 +151,29 @@ import { AffixOptions } from '@typedly/affix';
 const suffixOpts: AffixOptions<'item'> = {
   value: 'item'
   // pattern is optional
+};
+```
+
+#### `AffixSettings`
+
+[`affix-settings.interface.ts`](https://github.com/typedly/affix/blob/main/src/interface/affix-settings.interface.ts)
+
+```typescript
+import { AffixSettings } from '@typedly/affix';
+
+const settings1: AffixSettings<'example', 7, 27, 10, RegExp> = {
+  value: 'example',
+  length: {
+    value: 7,
+    min: 27,
+    max: 10 
+  },
+  pattern: {
+    regexp: /^[a-zA-Z]+$/,
+    lowercase: true,
+    uppercase: true,
+    special: true,
+  },
 };
 ```
 
