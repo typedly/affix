@@ -12,7 +12,7 @@ const affixConfiguration1: AffixConfiguration<'example', 7> = {
 const affixConfiguration2: AffixConfiguration<'example', 7, 27, 34> = {
   value: 'example',
   length: {
-    value: 7,
+    value: 27,
     min: 27,
     max: 34 
   },
