@@ -1,23 +1,26 @@
 // Interface.
+import { BasicAffixKind } from "../type";
 import { AffixSettings } from "./affix-settings.interface";
 /**
  * @description The interface defines the structure of an affix configuration object.
  * @export
  * @interface AffixConfiguration
- * @template {string} [Value=string] The type of the value property, defaults to `string`.
- * @template {number} [Length=number] The type of the length property, defaults to `number`.
- * @template {number} [Min=number] The type of the min property, defaults to `number`.
- * @template {number} [Max=number] The type of the max property, defaults to `number`.
- * @template {RegExp} [Pattern=RegExp] The type of the pattern property, defaults to `RegExp`.
- * @extends {AffixSettings<Value, Length, Min, Max, Pattern>}
+ * @template {string | undefined} [Value=string | undefined] The type of the value property, defaults to `string | undefined`.
+ * @template {BasicAffixKind | undefined} [Kind=BasicAffixKind | undefined] The type of the kind property, defaults to `BasicAffixKind | undefined`.
+ * @template {number | undefined} [Length=number | undefined] The type of length of generic type `Length`.
+ * @template {number | undefined} [Min=number | undefined] The type of min of generic type `Min`.
+ * @template {number | undefined} [Max=number | undefined] The type of max of generic type `Max`.
+ * @template {RegExp | string | undefined} [Pattern=RegExp | string | undefined] The type of the pattern property, defaults to `RegExp | string | undefined`.
+ * @extends {AffixSettings<Value, Kind, Pattern>}
  */
 export interface AffixConfiguration<
-  Value extends string = string,
-  Length extends number = number,
-  Min extends number = number,
-  Max extends number = number,
-  Pattern extends RegExp = RegExp
-> extends AffixSettings<Value, Length, Min, Max, Pattern> {
+  Value extends string | undefined = string | undefined,
+  Kind extends BasicAffixKind | undefined = BasicAffixKind | undefined,
+  Length extends number | undefined = number | undefined,
+  Min extends number | undefined = number | undefined,
+  Max extends number | undefined = number | undefined,
+  Pattern extends RegExp | string | undefined = RegExp | string | undefined
+> extends AffixSettings<Value, Kind, Length, Min, Max, Pattern> {
   /**
    * @description Represents the timestamp of the affix configuration. Last saved or modified time.
    * @type {?Date}
