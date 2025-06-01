@@ -14,7 +14,7 @@
 [![GitHub issues][typedly-badge-issues]][typedly-issues]
 [![GitHub license][typedly-badge-license]][typedly-license]
 
-**Version:** v2.3.0
+**Version:** v3.0.0
 
 A **TypeScript** type definitions package for affix.
 
@@ -86,14 +86,10 @@ import {
 ```typescript
 import { AffixConfiguration } from '@typedly/affix';
 
-const prefixConfig: AffixConfiguration<'app'> = {
-  value: 'app',
-  pattern: /[^a-z]/g // Removes non-lowercase letters
-};
-
 // Length and pattern exact value.
 const affixConfiguration1: AffixConfiguration<'example', 'circumfix', 27> = {
   value: 'example',
+  kind: 'circumfix',
   length: 27,
   pattern: /^[a-zA-Z]+$/,
   timestamp: new Date(),
@@ -102,6 +98,7 @@ const affixConfiguration1: AffixConfiguration<'example', 'circumfix', 27> = {
 // Full configuration with length and pattern settings.
 const affixConfiguration2: AffixConfiguration<'example', 'prefix', 27, 27, 34> = {
   value: 'example',
+  kind: 'prefix',
   length: {
     value: 27,
     min: 27,
@@ -171,6 +168,7 @@ import { AffixSettings } from '@typedly/affix';
 
 const settings1: AffixSettings<'example', 'infix', 33, 27, 34, RegExp> = {
   value: 'example',
+  kind: 'infix',
   length: {
     value: 33,
     min: 27,
