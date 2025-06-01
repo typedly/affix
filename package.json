@@ -1,6 +1,6 @@
 {
   "name": "@typedly/affix",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "A TypeScript type definitions package for affix.",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
-    "@typedly/settings": "^0.1.0"
+    "@typedly/settings": "^0.2.0"
   },
   "scripts": {
     "prepublishOnly": "npm install rimraf && npm run pkg && npm run clean",

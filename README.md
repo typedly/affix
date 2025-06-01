@@ -92,18 +92,18 @@ const prefixConfig: AffixConfiguration<'app'> = {
 };
 
 // Length and pattern exact value.
-const affixConfiguration1: AffixConfiguration<'example', 7> = {
+const affixConfiguration1: AffixConfiguration<'example', 'circumfix', 27> = {
   value: 'example',
-  length: 7,
+  length: 27,
   pattern: /^[a-zA-Z]+$/,
   timestamp: new Date(),
 };
 
 // Full configuration with length and pattern settings.
-const affixConfiguration2: AffixConfiguration<'example', 7, 27, 34> = {
+const affixConfiguration2: AffixConfiguration<'example', 'prefix', 27, 27, 34> = {
   value: 'example',
   length: {
-    value: 7,
+    value: 27,
     min: 27,
     max: 34 
   },
@@ -169,12 +169,12 @@ const suffixOpts: AffixOptions<'item'> = {
 ```typescript
 import { AffixSettings } from '@typedly/affix';
 
-const settings1: AffixSettings<'example', 7, 27, 10, RegExp> = {
+const settings1: AffixSettings<'example', 'infix', 33, 27, 34, RegExp> = {
   value: 'example',
   length: {
-    value: 7,
-    min: 10,
-    max: 27 
+    value: 33,
+    min: 27,
+    max: 34 
   },
   pattern: {
     regexp: /^[a-zA-Z]+$/,
@@ -255,6 +255,17 @@ Support via:
 
 - [Stripe](https://donate.stripe.com/dR614hfDZcJE3wAcMM)
 - [Revolut](https://checkout.revolut.com/pay/048b10a3-0e10-42c8-a917-e3e9cb4c8e29)
+- [GitHub](https://github.com/sponsors/angular-package/sponsorships?sponsor=sciborrudnicki&tier_id=83618)
+- [DonorBox](https://donorbox.org/become-a-sponsor-to-the-angular-package?default_interval=o)
+- [Patreon](https://www.patreon.com/checkout/angularpackage?rid=0&fan_landing=true&view_as=public)
+
+or via Trust Wallet
+
+- [XLM](https://link.trustwallet.com/send?coin=148&address=GAFFFB7H3LG42O6JA63FJDRK4PP4JCNEOPHLGLLFH625X2KFYQ4UYVM4)
+- [USDT (BEP20)](https://link.trustwallet.com/send?coin=20000714&address=0xA0c22A2bc7E37C1d5992dFDFFeD5E6f9298E1b94&token_id=0x55d398326f99059fF775485246999027B3197955)
+- [ETH](https://link.trustwallet.com/send?coin=60&address=0xA0c22A2bc7E37C1d5992dFDFFeD5E6f9298E1b94)
+- [BTC](https://link.trustwallet.com/send?coin=0&address=bc1qnf709336tfl57ta5mfkf4t9fndhx7agxvv9svn)
+- [BNB](https://link.trustwallet.com/send?coin=20000714&address=0xA0c22A2bc7E37C1d5992dFDFFeD5E6f9298E1b94)
 
 Thanks for your support!
 
