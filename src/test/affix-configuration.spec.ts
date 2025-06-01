@@ -1,15 +1,15 @@
 import { AffixConfiguration } from '../interface';
 
 // Length and pattern exact value.
-const affixConfiguration1: AffixConfiguration<'example', 7> = {
+const affixConfiguration1: AffixConfiguration<'example', 'circumfix', 27> = {
   value: 'example',
-  length: 7,
+  length: 27,
   pattern: /^[a-zA-Z]+$/,
   timestamp: new Date(),
 };
 
 // Full configuration with length and pattern settings.
-const affixConfiguration2: AffixConfiguration<'example', 7, 27, 34> = {
+const affixConfiguration2: AffixConfiguration<'example', 'prefix', 27, 27, 34> = {
   value: 'example',
   length: {
     value: 27,

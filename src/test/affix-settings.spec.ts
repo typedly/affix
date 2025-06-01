@@ -1,6 +1,6 @@
 import { AffixSettings } from '../interface';
 
-const settings1: AffixSettings<'example', 33, 27, 34, RegExp> = {
+const settings1: AffixSettings<'example', 'infix', 33, 27, 34, RegExp> = {
   value: 'example',
   length: {
     value: 33,
