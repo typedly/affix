@@ -1,6 +1,7 @@
 // Interface.
-import { BasicAffixKind } from "../type";
 import { AffixSettings } from "./affix-settings.interface";
+// Type.
+import { BasicAffixKind } from "../type";
 /**
  * @description The interface defines the structure of an affix configuration object.
  * @export
@@ -11,7 +12,7 @@ import { AffixSettings } from "./affix-settings.interface";
  * @template {number | undefined} [Min=number | undefined] The type of min of generic type `Min`.
  * @template {number | undefined} [Max=number | undefined] The type of max of generic type `Max`.
  * @template {RegExp | string | undefined} [Pattern=RegExp | string | undefined] The type of the pattern property, defaults to `RegExp | string | undefined`.
- * @extends {AffixSettings<Value, Kind, Pattern>}
+ * @extends {AffixSettings<Value, Kind, Length, Min, Max, Pattern>}
  */
 export interface AffixConfiguration<
   Value extends string | undefined = string | undefined,
