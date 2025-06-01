@@ -25,5 +25,5 @@ export interface AffixSettings<
   ValueSetting<Value>,
   LengthSetting<Length, Min, Max>,
   PatternSetting<Pattern> {
-  kind?: Kind | undefined;
+  kind: Kind | undefined;
 }
