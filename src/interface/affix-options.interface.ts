@@ -12,14 +12,16 @@ import { BasicAffixKind } from "../type";
  * @template {number | undefined} [Min=number | undefined] The type of the min property, defaults to `number | undefined`.
  * @template {number | undefined} [Max=number | undefined] The type of the max property, defaults to `number | undefined`.
  * @template {RegExp | string | undefined} [Pattern=RegExp | string | undefined] The type of the pattern property, defaults to `RegExp | string | undefined`.
- * @extends {Partial<AffixSettings<
- *   Value,
- *   Kind,
- *   Length,
- *   Min,
- *   Max,
- *   Pattern
- * >>}
+ * @extends {Partial<AffixSettings<Value, Kind, Length, Min, Max, Pattern>>}
+ * @example
+ * const example1: AffixOptions = {
+ *  kind: 'prefix',
+ *  lowercase: true,
+ *  uppercase: false,
+ *  special: false,
+ *  whitespace: false,
+ *  numeric: false
+ * };
  */
 export interface AffixOptions<
   Value extends string | undefined = string | undefined,
