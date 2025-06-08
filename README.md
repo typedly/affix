@@ -34,9 +34,7 @@ A **TypeScript** type definitions package for affix.
       - [`BasicAffixKind`](#basicaffixkind)
       - [`HypotheticalAffixKind`](#hypotheticalaffixkind)
       - [`SuprasegmentalAffixKind`](#suprasegmentalaffixkind)
-
     - [`AdfixTuple`](#adfixtuple)
-
     - Template
       - [`AdfixTemplate`](#adfixtemplate)
       - [`CircumfixTemplate`](#circumfixtemplate)
@@ -111,6 +109,12 @@ const affixConfiguration1: AffixConfiguration<'example', 'circumfix', 27> = {
   length: 27,
   pattern: /^[a-zA-Z]+$/,
   timestamp: new Date(),
+  digit: false,
+  lowercase: true,
+  uppercase: true,
+  special: true,
+  whitespace: false,
+  numeric: false,
 };
 
 // Full configuration with length and pattern settings.
@@ -122,13 +126,14 @@ const affixConfiguration2: AffixConfiguration<'example', 'prefix', 27, 27, 34> =
     min: 27,
     max: 34 
   },
-  pattern: {
-    regexp: /^[a-zA-Z]+$/,
-    lowercase: true,
-    uppercase: true,
-    special: true,
-  },
+  pattern: /^[a-zA-Z]+$/,
   timestamp: new Date(),
+  digit: false,
+  lowercase: true,
+  uppercase: true,
+  special: true,
+  whitespace: false,
+  numeric: false,
 };
 ```
 
@@ -192,12 +197,13 @@ const settings1: AffixSettings<'example', 'infix', 33, 27, 34, RegExp> = {
     min: 27,
     max: 34 
   },
-  pattern: {
-    regexp: /^[a-zA-Z]+$/,
-    lowercase: true,
-    uppercase: true,
-    special: true,
-  },
+  pattern: /^[a-zA-Z]+$/,
+  digit: false,
+  lowercase: true,
+  uppercase: true,
+  special: true,
+  whitespace: false,
+  numeric: false,
 };
 ```
 
