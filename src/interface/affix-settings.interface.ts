@@ -1,5 +1,7 @@
 // Interface.
-import { LengthSetting, PatternSettings, ValueSetting } from '@typedly/settings';
+import { ValueSetting } from '@typedly/settings';
+import { LengthSetting } from '@typedly/length';
+import { PatternSettings } from '@typedly/pattern';
 // Type.
 import { BasicAffixKind } from '../type';
 /**
