@@ -29,6 +29,6 @@ export interface AffixSettings<
   LengthSetting<Length, Min, Max>,
   Omit<PatternSettings<Pattern>, 'regexp'> {
     digit: boolean | undefined;
-    kind: Kind | undefined;
-    pattern: Pattern | undefined;
+    kind: Kind;
+    pattern: Pattern;
 }
