@@ -1,5 +1,5 @@
 // Interface.
-import { LengthSetting, PatternSetting, ValueSetting } from '@typedly/settings';
+import { LengthSetting, PatternSettings, ValueSetting } from '@typedly/settings';
 // Type.
 import { BasicAffixKind } from '../type';
 /**
@@ -12,7 +12,10 @@ import { BasicAffixKind } from '../type';
  * @template {number | undefined} [Min=number | undefined] The type of min of generic type `Min`.
  * @template {number | undefined} [Max=number | undefined] The type of max of generic type `Max`.
  * @template {RegExp | string | undefined} [Pattern=RegExp | string | undefined] The type of pattern of generic type `Pattern`.
- * @extends {Settings<Value, Length, Min, Max, Pattern>}
+ * @extends {ValueSetting<Value>}
+ * @extends {LengthSetting<Length, Min, Max>}
+ * @extends {PatternSettings<Pattern>}
+ * @extends {Omit<PatternSettings<Pattern>, 'regexp'>}
  */
 export interface AffixSettings<
   Value extends string | undefined = string | undefined,
@@ -24,6 +27,8 @@ export interface AffixSettings<
 > extends
   ValueSetting<Value>,
   LengthSetting<Length, Min, Max>,
-  PatternSetting<Pattern> {
-  kind: Kind | undefined;
+  Omit<PatternSettings<Pattern>, 'regexp'> {
+    digit: boolean | undefined;
+    kind: Kind | undefined;
+    pattern: Pattern | undefined;
 }
