@@ -14,7 +14,7 @@
 [![GitHub issues][typedly-badge-issues]][typedly-issues]
 [![GitHub license][typedly-badge-license]][typedly-license]
 
-**Version:** v3.0.0
+**Version:** v4.0.0
 
 A **TypeScript** type definitions package for affix.
 
@@ -28,13 +28,20 @@ A **TypeScript** type definitions package for affix.
     - [`AffixOptions`](#affixoptions)
     - [`AffixSettings`](#affixsettings)
   - [Type](#type)
-    - [`Adfix`](#adfix)
-    - [`AdfixTemplate`](#adfixtemplate)
+    - Kind
+      - [`Adfix`](#adfix)
+      - [`AffixKind`](#affixkind)
+      - [`BasicAffixKind`](#basicaffixkind)
+      - [`HypotheticalAffixKind`](#hypotheticalaffixkind)
+      - [`SuprasegmentalAffixKind`](#suprasegmentalaffixkind)
     - [`AdfixTuple`](#adfixtuple)
-    - [`AffixKind`](#affixkind)
-    - [`BasicAffixKind`](#basicaffixkind)
-    - [`HypotheticalAffixKind`](#hypotheticalaffixkind)
-    - [`SuprasegmentalAffixKind`](#suprasegmentalaffixkind)
+    - Template
+      - [`AdfixTemplate`](#adfixtemplate)
+      - [`CircumfixTemplate`](#circumfixtemplate)
+      - [`InfixTemplate`](#infixtemplate)
+      - [`InterfixTemplate`](#interfixtemplate)
+      - [`PrefixTemplate`](#prefixtemplate)
+      - [`SuffixTemplate`](#suffixtemplate)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -66,14 +73,23 @@ import {
   AffixConstructor,
   AffixOptions,
   AffixSettings,
-  //Type.
+
+  // Type.
+  // -> Kind.
   Adfix,
-  AdfixTemplate,
-  AdfixTuple,
   AffixKind,
   BasicAffixKind,
   HypotheticalAffixKind,
   SuprasegmentalAffixKind,
+  // -> Tuple.
+  AdfixTuple,
+  // -> Template.
+  AdfixTemplate,
+  CircumfixTemplate,
+  InfixTemplate,
+  InterfixTemplate,
+  PrefixTemplate,
+  SuffixTemplate,
 } from '@typedly/affix';
 ```
 
@@ -93,6 +109,12 @@ const affixConfiguration1: AffixConfiguration<'example', 'circumfix', 27> = {
   length: 27,
   pattern: /^[a-zA-Z]+$/,
   timestamp: new Date(),
+  digit: false,
+  lowercase: true,
+  uppercase: true,
+  special: true,
+  whitespace: false,
+  numeric: false,
 };
 
 // Full configuration with length and pattern settings.
@@ -104,13 +126,14 @@ const affixConfiguration2: AffixConfiguration<'example', 'prefix', 27, 27, 34> =
     min: 27,
     max: 34 
   },
-  pattern: {
-    regexp: /^[a-zA-Z]+$/,
-    lowercase: true,
-    uppercase: true,
-    special: true,
-  },
+  pattern: /^[a-zA-Z]+$/,
   timestamp: new Date(),
+  digit: false,
+  lowercase: true,
+  uppercase: true,
+  special: true,
+  whitespace: false,
+  numeric: false,
 };
 ```
 
@@ -174,12 +197,13 @@ const settings1: AffixSettings<'example', 'infix', 33, 27, 34, RegExp> = {
     min: 27,
     max: 34 
   },
-  pattern: {
-    regexp: /^[a-zA-Z]+$/,
-    lowercase: true,
-    uppercase: true,
-    special: true,
-  },
+  pattern: /^[a-zA-Z]+$/,
+  digit: false,
+  lowercase: true,
+  uppercase: true,
+  special: true,
+  whitespace: false,
+  numeric: false,
 };
 ```
 
@@ -191,22 +215,6 @@ const settings1: AffixSettings<'example', 'infix', 33, 27, 34, RegExp> = {
 
 ```typescript
 import { Adfix } from '@typedly/affix';
-```
-
-#### `AdfixTemplate`
-
-[`adfix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/adfix-template.type.ts)
-
-```typescript
-import { AdfixTemplate } from '@typedly/affix';
-```
-
-#### `AdfixTuple`
-
-[`adfix-tuple.type.ts`](https://github.com/typedly/affix/blob/main/src/type/adfix-tuple.type.ts)
-
-```typescript
-import { AdfixTuple } from '@typedly/affix';
 ```
 
 #### `AffixKind`
@@ -239,6 +247,66 @@ import { SuprasegmentalAffixKind } from '@typedly/affix';
 
 ```typescript
 import { HypotheticalAffixKind } from '@typedly/affix';
+```
+
+#### Tuple
+
+#### `AdfixTuple`
+
+[`adfix-tuple.type.ts`](https://github.com/typedly/affix/blob/main/src/type/adfix-tuple.type.ts)
+
+```typescript
+import { AdfixTuple } from '@typedly/affix';
+```
+
+#### Template
+
+#### `AdfixTemplate`
+
+[`adfix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/adfix-template.type.ts)
+
+```typescript
+import { AdfixTemplate } from '@typedly/affix';
+```
+
+#### `CircumfixTemplate`
+
+[`circumfix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/circumfix-template.type.ts)
+
+```typescript
+import { CircumfixTemplate } from '@typedly/affix';
+```
+
+#### `InfixTemplate`
+
+[`infix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/infix-template.type.ts)
+
+```typescript
+import { InfixTemplate } from '@typedly/affix';
+```
+
+#### `InterfixTemplate`
+
+[`interfix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/interfix-template.type.ts)
+
+```typescript
+import { InterfixTemplate } from '@typedly/affix';
+```
+
+#### `PrefixTemplate`
+
+[`prefix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/prefix-template.type.ts)
+
+```typescript
+import { PrefixTemplate } from '@typedly/affix';
+```
+
+#### `SuffixTemplate`
+
+[`prefix-template.type.ts`](https://github.com/typedly/affix/blob/main/src/type/suffix-template.type.ts)
+
+```typescript
+import { SuffixTemplate } from '@typedly/affix';
 ```
 
 ## Contributing

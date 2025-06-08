@@ -9,11 +9,19 @@ export type {
 } from './interface';
 
 export type {
+  // Kind.
   Adfix,
-  AdfixTemplate,
-  AdfixTuple,
   AffixKind,
   BasicAffixKind,
   HypotheticalAffixKind,
   SuprasegmentalAffixKind,
+  // Tuple.
+  AdfixTuple,
+  // Template.
+  AdfixTemplate,
+  CircumfixTemplate,
+  InfixTemplate,
+  InterfixTemplate,
+  PrefixTemplate,
+  SuffixTemplate,
 } from './type';

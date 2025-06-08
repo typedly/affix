@@ -6,12 +6,13 @@ const settings1: AffixSettings<'example', 'infix', 33, 27, 34, RegExp> = {
   length: {
     value: 33,
     min: 27,
-    max: 34 
+    max: 34
   },
-  pattern: {
-    regexp: /^[a-zA-Z]+$/,
-    lowercase: true,
-    uppercase: true,
-    special: true,
-  },
+  pattern: /^[a-zA-Z]+$/,
+  digit: false,
+  lowercase: true,
+  uppercase: true,
+  special: true,
+  whitespace: false,
+  numeric: false,
 };
